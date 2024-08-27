@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Gastronomía Market - Proveedores y Artículos</h1>
+    
+    <form id="proveedorForm">
+        <label for="nombreProveedor">Nombre del Proveedor:</label>
+        <input type="text" id="nombreProveedor" required>
+        
+        <label for="nombreArticulo">Nombre del Artículo:</label>
+        <input type="text" id="nombreArticulo" required>
+        
+        <label for="precioArticulo">Precio del Artículo:</label>
+        <input type="number" id="precioArticulo" required>
+        
+        <label for="emailProveedor">Email del Proveedor:</label>
+        <input type="email" id="emailProveedor" required>
+        
+        <label for="telefonoProveedor">Teléfono del Proveedor:</label>
+        <input type="tel" id="telefonoProveedor" required>
+
+        <label for="tipoProveedor">Tipo de Proveedor:</label>
+        <select id="tipoProveedor" required>
+            <option value="nacional">Nacional</option>
+            <option value="internacional">Internacional</option>
+        </select>
+        
+        <button type="submit">Agregar Proveedor</button>
+    </form>
+
+    <label for="filtroProveedor">Filtrar por Proveedor:</label>
+    <select id="filtroProveedor">
+        <option value="todos">Todos</option>
+    </select>
+
+    <label for="filtroTipo">Filtrar por Tipo de Proveedor:</label>
+    <select id="filtroTipo">
+        <option value="todos">Todos</option>
+        <option value="nacional">Nacional</option>
+        <option value="internacional">Internacional</option>
+    </select>
+
+    <h2>Lista de Proveedores</h2>
+    <table id="tablaProveedores">
+        <thead>
+            <tr>
+                <th>Nombre del Proveedor</th>
+                <th>Nombre del Artículo</th>
+                <th>Precio</th>
+                <th>Email</th>
+                <th>Teléfono</th>
+                <th>Tipo de Proveedor</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <h3>Total de Impuestos: $<span id="totalImpuestos">0</span></h3>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
